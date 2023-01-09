@@ -1,0 +1,67 @@
+#title {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.continue {
+  background-color: black;
+  color: white;
+  width: 318px;
+  border-radius: 5px;
+  margin: 25px 20px 0px 17px;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.input {
+  margin-top: 30px;
+}
+
+#pin-input {
+  height: 40px;
+  width: 40px;
+  margin: 1rem 0.2rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#otp-btn {
+  color: blue;
+  font-size: 18px;
+}
+
+#enter {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.para {
+  font-size: 12px;
+  width: 180px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  margin-top: 15px;
+  color: grey;
+}
+
+#edit-btn {
+  color: blue;
+  margin-top: 18px;
+  margin-left: -30px;
+}
+
+#disabled {
+  background-color: #bbbbbb;
+}
+
+.timer {
+  color: green;
+  font-size: 18px;
+}

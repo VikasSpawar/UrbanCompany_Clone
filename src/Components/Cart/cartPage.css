@@ -1,0 +1,131 @@
+.body {
+  width: 70%;
+  height: 1000px;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+
+.heading {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid rgb(223, 219, 219);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.para1 {
+  text-align: left;
+  font-size: 14px;
+  margin: 10px 0px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid rgb(223, 219, 219);
+}
+
+.title1 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f2fd;
+}
+
+.price1 {
+  display: flex;
+  background-color: #f5f2fd;
+  padding: 0px 15px;
+  border: 1px solid #6e42e5;
+  border-radius: 5px;
+}
+
+.ul {
+  text-align: left;
+  margin-left: 20px;
+  color: grey;
+  font-size: 14px;
+}
+
+.edit-btn {
+  border: 0.5px solid grey;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 400px;
+  margin-top: 20px;
+}
+
+.last {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 5px solid rgb(215, 210, 210); */
+}
+
+.last h2 {
+  font-weight: bold;
+}
+
+.price2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rmv-btn {
+  margin-right: 20px;
+  background-color: #f5f2fd;
+  padding: 5px 15px;
+  border: 1px solid #6e42e5;
+  border-radius: 5px;
+  color: #6e42e5;
+}
+
+.border {
+  margin-top: 15px;
+  border-bottom: 5px solid rgb(215, 210, 210);
+}
+
+.right-container {
+  margin-left: 80px;
+  position: sticky;
+}
+
+.title2 {
+  text-align: left;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.same {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#tax {
+  border-bottom: 1px solid rgb(204, 198, 198);
+}
+
+.total-bill {
+  border-top: 0.5px solid rgb(200, 196, 196);
+  height: 100px;
+  margin-top: 25px;
+}
+
+.yay {
+  height: 30px;
+  background-color: rgb(216, 252, 216);
+  color: teal;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.pay-btn {
+  padding: 15px 153px;
+  background-color: #6e42e5;
+  margin-top: 20px;
+  color: white;
+  border-radius: 5px;
+}

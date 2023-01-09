@@ -1,0 +1,251 @@
+.App {
+  text-align: center;
+  font-family:sans-serif
+}
+html{
+  scroll-behavior: smooth;;
+}
+.H{
+  height: calc(100vh - 164px); 
+  /* display:flex; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.CtgBx{
+  
+  padding: 5;
+margin:"auto";
+/* display:flex; */
+justify-content :space-evenly;
+position:"sticky";
+top:0;
+background-color:white;
+z-Index:1;
+  
+}
+
+.offers{ 
+display: flex;
+  /* height: calc(100vh - 153px);  */
+  height: fit-content;
+  align-self: baseline;
+  /* overflow: auto; */
+position: sticky;
+z-index: 0;
+top: 164px;
+bottom: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#text {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+}
+#text>img{
+  width: 100%;
+}
+#top {
+  width: 100%;
+  height: 500px;
+  filter:brightness(40%)
+}
+#input {
+  position: absolute;
+  left: 70%;
+  top: 10%;
+  width: 25%;
+  height: 3%;
+}
+#input > input {
+  width: 100%;
+  border-radius: 15px;
+  border: 0px;
+  height: 100%;
+}
+.scrollbox {
+ 
+  height: 100%;
+  overflow: scroll;
+  background-color: bisque;
+  padding: 5px;
+  text-align: left;
+}
+.scroll {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0px;
+}
+.scroll > div > p ~ p {
+  color: blueviolet;
+}
+#beauty > div > p:nth-child(even) {
+  color: blueviolet;
+}
+.main {
+  margin: 100px auto;
+  width: 80%;
+}
+.main > h1 {
+  text-align: left;
+  border-top: blueviolet;
+}
+#beauty {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px;
+  margin: auto;
+}
+#hover {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgb(235, 229, 209);
+}
+#hover > div {
+  cursor: pointer;
+  font-size: 20px;
+  color: gray;
+}
+#hover > div:hover {
+  color: blueviolet;
+  border-bottom: 3px solid blueviolet;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  color: gray;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.homecare {
+  display: grid;
+  width: 80%;  
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+  margin: auto;
+  gap:5%;
+}
+
+.homecare > div > p:nth-child(even) {
+  color: blueviolet;
+}
+.homecare > div > img {
+  width: 100%;
+  height: 60%;
+}
+.combo {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 350px;
+  margin:15% auto;
+  gap: 5%;
+}
+
+#hr {
+  background-color: blueviolet;
+  border: 2px solid blueviolet;
+}
+#footer {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 80%;
+  gap: 3%;
+  margin: 4% auto;
+}
+
+#footer > div > img {
+  width: 100%;
+}
+#p {
+  color: blueviolet;
+  text-align: center;
+}
+@media (min-width: 150px) and (max-width: 780px) {
+  #top{
+    height: 250px;
+    width: 100%;
+  }
+  #beauty {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px;
+    margin: auto;
+  }
+  .scrollbox {
+    margin-top: 20%;
+    height: 250px;
+    overflow: scroll;
+    background-color: bisque;
+    padding: 5px;
+    text-align: left;
+  }
+  .homecare {
+    display: grid;
+    width: 80%;  
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;  
+    margin:20% auto;
+ 
+    gap:10%;
+  }
+  .combo {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 350px;
+    margin:15% auto;
+    gap: 5%;
+  }
+  #footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    gap: 3%;
+    margin: 4% auto;
+  }
+}
